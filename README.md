@@ -22,4 +22,10 @@ The following is installed:
 Notes
 -----
 
-Mounts local folder with nfs for better performance.
+Mounts local folder with nfs for better performance. 
+
+Thanks to dnsmasq+vhost_alias, all http requests for hosts ending with .dev are sent to /vagrant/www/$1 where $1 is replaced with the actual domain from the http header. A request to http://hellworld.dev would be sent to /vagrant/www/helloworld.dev/www . This way it's easy to setup multiple virtual hosts without a need for separate configuration for each host.
+
+ A good tutorial on how to setup dnsmasq on osx, http://davidwinter.me/articles/2011/06/18/simple-local-web-development-with-apache-and-dnsmasq/ .
+
+ 
