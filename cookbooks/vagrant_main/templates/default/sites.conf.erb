@@ -1,6 +1,8 @@
 <VirtualHost *:80>
   UseCanonicalName off
   VirtualDocumentRoot <%= @params[:docroot] %>/%0/www
+
+  EnableSendfile off
     
   <Directory <%= @params[:docroot] %>>
     Options FollowSymLinks
