@@ -4,7 +4,8 @@ Vagrant::Config.run do |config|
   # online.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "https://github.com/downloads/dwroblewski/Vagrant-for-LAMP/lucid32-updated.box"
+  config.vm.box = "lucid32-updated"
+  config.vm.box_url = "https://github.com/downloads/dwroblewski/Vagrant-for-LAMP/lucid32-updated.box"
 
   config.vm.share_folder("v-root", "/vagrant", ".", :nfs => true)
 
