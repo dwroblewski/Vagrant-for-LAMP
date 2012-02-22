@@ -3,6 +3,8 @@ Vagrant for LAMP
 
 Vagrant configured for local LAMP development. Uses an updated lucid32 box with Ubuntu 10.04.4 and VirtualBox Guest Additions 4.1.8.
 
+Based on https://github.com/ymainier/vagrant-lamp . 
+
 Contents
 -------
 
